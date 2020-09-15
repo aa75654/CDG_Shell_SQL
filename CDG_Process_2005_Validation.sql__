@@ -1,0 +1,4 @@
+select count(1) from CDG_PROCESS_LOG@CDG001T_QICT.CORP.LITEL.COM where process_id=2005 and START_DT > (sysdate-4/24);
+select count(1) from revenue_order_detail @CDG001T_QICT.CORP.LITEL.COM 
+where bill_yr_mo=(select BILL_YR_MO from major_run@CDG001T_QICT.CORP.LITEL.COM where major_id=(select max(major_id) from major_run@CDG001T_QICT.CORP.LITEL.COM));
+select count(1) from revenue_order@CDG001T_QICT.CORP.LITEL.COM where bill_yr_mo=(select BILL_YR_MO from major_run@CDG001T_QICT.CORP.LITEL.COM where major_id=(select max(major_id) from major_run@CDG001T_QICT.CORP.LITEL.COM));

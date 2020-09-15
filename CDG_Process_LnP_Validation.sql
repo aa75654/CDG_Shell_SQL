@@ -1,0 +1,10 @@
+select count(1) from cdg_process_log@CDG001T_QICT.CORP.LITEL.COM where process_id =400 and status_id!=1000 and start_dt > (sysdate-4/24);
+select count(1) from cdg_process_log@CDG001T_QICT.CORP.LITEL.COM where process_id =401 and status_id!=1000 and start_dt > (sysdate-4/24); 
+select count(1) from cdg_process_log@CDG001T_QICT.CORP.LITEL.COM where process_id =4001 and status_id!=1000 and start_dt > (sysdate-4/24); 
+select count(1) from cdg_process_log@CDG001T_QICT.CORP.LITEL.COM where process_id =500 and status_id!=1000 and start_dt > (sysdate-4/24); 
+select count(1) from cdg_process_log@CDG001T_QICT.CORP.LITEL.COM where process_id =160 and status_id!=1000 and start_dt > (sysdate-4/24); 
+select count(1) from cdg_process_log@CDG001T_QICT.CORP.LITEL.COM where process_id =7002 and status_id!=1000 and start_dt > (sysdate-4/24);
+select count(1) from cdg_process_log@CDG001T_QICT.CORP.LITEL.COM where process_id =7000 and status_id!=1000 and start_dt > (sysdate-4/24);
+select count(1) from cdg_process_log@CDG001T_QICT.CORP.LITEL.COM where process_id =7001 and status_id!=1000 and start_dt > (sysdate-4/24);
+select count(1) from cdg_process_log@CDG001T_QICT.CORP.LITEL.COM where process_id =2500 and status_id!=1000 and start_dt > (sysdate-4/24);
+select count(1) from cdg_process_log@CDG001T_QICT.CORP.LITEL.COM where process_id =2300 and status_id!=1000 and start_dt > (sysdate-4/24);
