@@ -16,6 +16,6 @@ select count(1) from
 select count(1) from REVENUE_ORDER_DETAIL@CDG001T_QICT.CORP.LITEL.COM  where revord_id in 
 (select revord_id from REVENUE_ORDER@CDG001T_QICT.CORP.LITEL.COM  where bill_yr_mo=202004);
 select count(1) from REVENUE_ORDER@CDG001T_QICT.CORP.LITEL.COM  where bill_yr_mo=202004;
-select count(1) from REVENUE_AMT_VW;
-select count(1) from INVOICE_PROCESS_LOG where invoice_no in (select invoice_no from revenue_order_detail where revord_id in
-(select revord_id from revenue_order where bill_yr_mo='202004'));
+select count(1) from REVENUE_AMT_VW@CDG001T_QICT.CORP.LITEL.COM;
+select count(1) from INVOICE_PROCESS_LOG@CDG001T_QICT.CORP.LITEL.COM where invoice_no in (select invoice_no from revenue_order_detail@CDG001T_QICT.CORP.LITEL.COM where revord_id in
+(select revord_id from revenue_order@CDG001T_QICT.CORP.LITEL.COM where bill_yr_mo='202004'));
